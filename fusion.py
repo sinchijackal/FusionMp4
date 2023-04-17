@@ -3,8 +3,8 @@ import os
 import glob
 
 ruta_ffmpeg = 'D:\\ffmpeg\\bin\\ffmpeg.exe'
-carpeta_videos_audios = r'D:\mis_videos'
-carpeta_salida_fusion = r'D:\mis_videos\salida'
+carpeta_videos_audios = r'D:\Cursos\Vueschool\Other\Nuxt.js 3 Fundamentals'
+carpeta_salida_fusion = r'D:\Cursos\Vueschool\Other\Nuxt.js 3 Fundamentals\salida'
 
 # Obtener los archivos de la carpeta
 archivos = os.listdir(carpeta_videos_audios)
