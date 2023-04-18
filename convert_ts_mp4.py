@@ -26,5 +26,6 @@ for i in prefijos:
     nombre_archivo_video = nombre_archivo_video.replace(" - Curso de React con Typescript-playlist", "")
     archivo_salida = os.path.join(carpeta_salida_fusion, f"{nombre_archivo_video}.mp4")
     # invocamos a ffmpeg para la conversión
-    print("\033[32m" + f"Convirtiendo... {archivo_video} --> {archivo_salida}" + "\033[0m")
+    print("\033[37m" + f"Convirtiendo... \033[32m{archivo_video}\033[37m --> \033[33m{archivo_salida}" + "\033[0m")
+
     subprocess.run(f"{ruta_ffmpeg} -hide_banner -nostats -loglevel error -i \"{archivo_video}\" -c:v libx264 \"{archivo_salida}\"")
