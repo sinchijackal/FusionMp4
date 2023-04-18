@@ -26,4 +26,4 @@ for i in prefijos:
     archivo_audio = glob.glob(os.path.join(carpeta_videos_audios, f"{i}-*-audio.mp4"))[0]
     archivo_salida = os.path.join(carpeta_salida_fusion, f"{nombre_archivo_video}.mp4")
     # invocamos a ffmpeg para la fusion
-    subprocess.run(f"{ruta_ffmpeg} -i \"{archivo_video}\" -i \"{archivo_audio}\" -c:v copy -c:a copy \"{archivo_salida}\"")
+    subprocess.run(f"{ruta_ffmpeg} -hide_banner -nostats -loglevel error -i \"{archivo_video}\" -i \"{archivo_audio}\" -c:v copy -c:a copy \"{archivo_salida}\"")
