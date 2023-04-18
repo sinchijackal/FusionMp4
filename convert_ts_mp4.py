@@ -11,7 +11,7 @@ archivos = os.listdir(carpeta_videos_audios)
 prefijos = []  # Lista de prefijos de los archivos de video ejm: [2, 3, "9b", 10, 14, 15, 16, "16b", 21, 22]
 
 archivos = sorted(archivos)
-# Leemos los archivos .mp4 y obtenemos los prefijos
+# Leemos los archivos .ts y obtenemos los prefijos
 for archivo in archivos:
     if archivo.endswith('.ts'):
         prefijo = archivo.split('-')[0]
